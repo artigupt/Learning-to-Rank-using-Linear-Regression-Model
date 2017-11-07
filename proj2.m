@@ -1,7 +1,3 @@
-UBitName = 'artigupt';
-
-personNumber = '50170010';
-
 [num,txt,raw]=xlsread('dataset.xlsx');
 target=xlsread('dataset2.xlsx');
 
@@ -146,9 +142,6 @@ for i=1:size(syntheticphi,1)
     w02 = w02+dws;
     dw2 = [dw2 dws];
 end
-
-save('proj2.mat', 'UBitName', 'personNumber', 'dw', 'dw1', 'dw2', 'dws', 'error', 'error2', 'eta1', 'eta2', 'i', 'j', 'lambda1', 'lambda2', 'M1', 'M2', 'mu1', 'mu2','num', 'phi', 'phi2', 'raw', 'Serror', 'Serror2', 'Sigma1','Sigma2','size_phi', 'size_phi2', 'Sphi2', 'Starget1', 'Starget2', 'syntheticphi', 't', 'target', 'target1', 'target2', 'target3', 'test', 'train','train2', 'trainInd1', 'trainInd2', 'training_size_col', 'trainPer1', 'trainPer2', 'validation','validation2','validInd1', 'validInd2', 'validPer1', 'validPer2','w01','w02', 'w1', 'w2', 'x','X' );
- 
 
 
 
